@@ -1,0 +1,5 @@
+//*** Tools ***/
+@function calcu_colm_w( $w-max, $tot, $margin){
+	$colm_w: floor( ( $w-max - ( $margin * ( $tot - 1 ) ) ) / $tot);
+	@return #{$colm_w}px;
+}

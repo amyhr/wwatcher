@@ -1,0 +1,13 @@
+//*** Unit ***/
+
+$mg-start: 0;
+$mg-end: 10;
+$mg-step: 3;
+
+@for $i from $mg-start through $mg-end {
+	$val: $i * $mg-step;
+	.mg#{ $val } {
+		margin:#{ $val }px;
+	}
+}
+

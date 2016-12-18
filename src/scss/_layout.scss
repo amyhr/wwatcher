@@ -1,0 +1,12 @@
+//*** Layout ***/
+//Mixins
+@mixin base-colm( $mg:10px, $pn:0px) {
+	margin: $mg;
+	padding: $pn;
+	float: left;
+}
+@mixin base-colm-inner() {
+    .inner {
+        @content;
+    }
+}

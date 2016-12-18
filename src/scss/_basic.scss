@@ -1,0 +1,60 @@
+/*** Basic ***/
+//Mixins
+@mixin centered( $mg:10px ) {
+  margin: $mg auto;
+}
+@mixin clearfix {
+	&:after {  
+	  content: ".";   
+	  display: block;   
+	  height: 0;   
+	  clear: both;   
+	  visibility: hidden; 
+  	}
+}
+@mixin w_ratio( $r:'100%') {
+  width:$r
+}
+//CSS-HTML
+body {
+	font: 14px sans-serif !important;
+}
+body, div, p {
+	padding: 0;
+	margin: 0;
+}
+footer {
+	clear: both;
+	color: map-get($member-col, footer);
+	margin-top: 60px; 
+	border-top: 1px solid map-get($member-col, footer);
+}
+small {
+	opacity:0.7;
+}
+.theme_col .humble{
+	color: map-get($member-col, theme_mirror);
+}
+.clearfix{
+	@include clearfix;
+}
+.right{
+	float:right;
+}
+
+//CSS-SVG
+.axis--x path {
+	display: none;
+}
+.line {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 1.5px;
+}
+text.annot {
+	font: 10px sans-serif;
+}
+.axis > text {
+	fill: #000; 
+}
+

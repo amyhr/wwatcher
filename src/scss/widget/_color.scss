@@ -1,0 +1,28 @@
+//*** Colors ***/
+//Functions
+@function set_member_col( $update ){
+	//@debug $update;
+	@if $update == null  {} 
+	@else {
+		$member-col: map-merge($member-col,  $update);
+		@return $member-col;
+	}
+	@return $member-col;
+}
+
+//Mixins
+@mixin theme_col( $el:null ) {
+	$col: map-get($member-col, theme);
+	@if $el == button {
+		background: rgba($col, .7);
+	}@else {
+		color: $col;
+	}
+}
+
+//Vars
+$member-col: (
+	theme:tomato,
+	theme_mirror:#555,
+	footer:#999
+);

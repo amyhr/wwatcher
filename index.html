@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>test</title>
+<link rel="stylesheet" type="text/css" href="public/style/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.5.1/css/bootstrap-slider.min.css">
+</head>
+
+<body><input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+    <div id="wrapper-main">
+      
+       <header>
+            <h1 class="theme_col">WWatch for <span class="humble">Aya</span></h1>
+        </header>
+        
+        <main id="colm-svg">
+            <svg id="major-svg"></svg>
+        </main>
+        
+        <aside id="colm-controller">
+            <div class="inner">
+    			
+                <div id="switch_time" class = "clearfix">
+                    <div id ="scope_time" class="btn-group right" role="group">
+                      <button type="button" id="week1" data-unit="week {1}@{-1}" class="btn btn-default off">week</button>
+                      <button type="button" id="month1" data-unit="month {1}@{0}" class="btn btn-default off">month</button>
+                    </div>
+        		</div>
+                
+                <div id="today">
+                    <div class="title">Today </div>
+                    <small>no entry updates with the same record as last time</small>
+                    <div class="input-group">	
+                        <input id="w_val" type="text" class="form-control" placeholder="weight">
+                        <input id="g_val" type="text" class="form-control" placeholder="goal">
+                        <span class="input-group-btn"><button id="update_record_btn" class="btn btn-default theme_col">update</button></span>
+                    </div>
+                </div>
+               
+                <div id="go_past">
+               		<div class="title">Go Past:</div>
+                    <input id="slider_past" type="text"/> 
+                </div>
+            
+            </div>
+            
+        </aside>
+        
+        <footer>
+        	<div class="right">am-sankaku</div>
+        </footer>
+    
+    </div>
+
+</body>
+
+</html>

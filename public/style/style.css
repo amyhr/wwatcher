@@ -1,0 +1,96 @@
+/*** Basic ***/
+body {
+  font: 14px sans-serif !important; }
+
+body, div, p {
+  padding: 0;
+  margin: 0; }
+
+footer {
+  clear: both;
+  color: #999;
+  margin-top: 60px;
+  border-top: 1px solid #999; }
+
+small {
+  opacity: 0.7; }
+
+.theme_col .humble {
+  color: #555; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.right {
+  float: right; }
+
+.axis--x path {
+  display: none; }
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px; }
+
+text.annot {
+  font: 10px sans-serif; }
+
+.axis > text {
+  fill: #000; }
+
+/*** On Project ***/
+#wrapper-main {
+  margin: 10px auto;
+  max-width: 90%; }
+
+.colm, #colm-svg, #colm-controller {
+  margin: 10px;
+  padding: 0px;
+  float: left; }
+  .colm .inner, #colm-svg .inner, #colm-controller .inner {
+    maring: 10px; }
+
+#colm-controller {
+  width: 300px;
+  margin-left: 50px; }
+
+#colm-controller .inner > div {
+  margin: 20px 0 0 0; }
+
+.theme_col {
+  color: #2ca02c; }
+
+button.theme_col {
+  background: rgba(44, 160, 44, 0.7); }
+
+button.on {
+  border-bottom: solid 2px tomato !important; }
+
+button.off {
+  border-style: none; }
+
+div.tooltip_d3 {
+  position: absolute;
+  width: 120px;
+  height: 37px;
+  padding: 5px 10px;
+  font: 12px sans-serif;
+  background: #efefef;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none; }
+
+#colm-controller .title {
+  color: #555;
+  margin-bottom: 7px;
+  font-weight: bold; }
+
+#go_past .title {
+  margin-bottom: 1px; }
+
+#today input {
+  width: 50%; }
