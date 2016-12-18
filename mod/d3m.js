@@ -309,6 +309,5 @@ const d3m = {
 	}
 }
 
-//if( front && !front.hasOwnProperty('window') ) module.exports = d3m; 
 if( !front ) module.exports = d3m; 
-//true means being called by client having no module
+
